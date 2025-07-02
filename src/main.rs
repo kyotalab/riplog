@@ -1,3 +1,7 @@
+use clap::Parser;
+use riplog::Args;
+
 fn main() {
-    println!("Hello, world!");
+    let args = Args::parse();
+    println!("{:?}", args);
 }
